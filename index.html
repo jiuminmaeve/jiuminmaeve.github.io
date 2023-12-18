@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1" />	
+	<title>My Blob</title>
+
+	<link rel="stylesheet" href="./style.css" type="text/css" media="all" />
+	<link rel="shortcut icon" href="./images/favicon.png"/>
+	<style>
+		#playShow img {
+			width:200px;
+			height: auto;
+		}
+		#playNum a{
+			display: none;
+		}
+
+		div ul li a:hover{
+			-webkit-transform: scale(2,2);
+			-moz-transform: scale(2,2);
+			-o-transform: scale(2,2);
+			-webkit-transition-duration: 2s;
+			-moz-transition-duration: 2s;
+			-o-transition-duration: 2s;
+		}
+
+	    div ul li a p:visited{
+			-webkit-transform: scale(1,1.2);
+			-moz-transform: scale(1,1.2);
+			-o-transform: scale(1,1.2);
+			-webkit-transition-duration: 2s;
+			-moz-transition-duration: 2s;
+			-o-transition-duration: 2s;
+			background-color: aqua;
+		}
+	    div ul li a p:hover{
+			animation-name: changeBackground;
+			animation-duration: 3s;
+			animation-timing-function: linear;
+			animation-iteration-count: infinite;
+			animation-direction: alternate;
+			animation-play-state: running;
+			
+			-webkit-animation-name: changeBackground;
+			-webkit-animation-duration: 3s;
+			-webkit-animation-timing-function: linear;
+			-webkit-animation-iteration-count: infinite;
+			-webkit-animation-direction: alternate;
+			-webkit-animation-play-state: running;			
+		}
+
+		@keyframes changeBackground {
+			0% {scale:1;background-color: aqua;}
+			25% {scale:1.1;background-color: rgb(34, 30, 216);}
+			50% {scale:1.2;background-color: rgb(140, 127, 255);}
+			75% {scale:1.3;background-color: rgb(151, 49, 138);}			
+			100% {scale:1.4;background-color: rgb(230, 38, 79);}			
+		}
+
+		#dateTime1{
+			font-size: 40px;
+			color: #fff;
+		}
+	</style>
+</head>
+<body>
+	
+<div class="loading">
+	<div class="loading-circle"></div>
+	<div class="loading-avatar"><img src="images/avatar@2x.jpg" alt="" width="50" height="50"></div>
+	<div class="loading-info">正在努力加载中...</div>
+</div>
+<div class="section-header">
+	<div class="section">
+		<nav class="nav" role="navigation">
+			<ul>
+				<li class="nav-about fade fade1"><a href="#about">About</a></li>
+				<li class="nav-works fade fade4"><a href="#works">Artifact</a></li>
+				<li class="fade back-home"><a href="#top">HomePage</a></li>
+				<li class="nav-books fade fade4"><a href="#books">Link</a></li>
+				<li class="nav-contact fade fade4"><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="nav-bg"></div>
+</div>
+<div class="home-bg">
+	<img src="images/home-bg.jpg" alt="" width="1000" height="667">
+</div>
+<div class="section-wrap section-fristpage">
+	<div class="section">
+		<div class="section-content" >
+			<p class="fade fade1">Hi，This is Maeve Qiu</p>
+			<p class="fade fade2">I love reading and writing ~</p>
+			<p class="fade fade3">Want to see more, please scroll down ^_^</p>
+		</div>
+		<a href="#" class="scroll-tip fade fade4">Scroll Down</a>
+	</div>
+</div>
+<div id="about" class="section-wrap section-about">
+	<div class="section">
+		<div class="about-content clearfix section-content">
+			<div class="left" style=" color:aliceblue;">
+				<h1>About Me</h1>
+				<p class="fade fade1">Study in junior school on 2012</p>
+				<p class="fade fade2">Study in sixty-five middle school on 2018</p>
+				<p class="fade fade3">Study in eleven high school on 2021</p>
+			</div>
+			<div class="right" id="play">
+				<ul>
+					<li id="playNum"><a >1</a><a>2</a><a>3</a></li>
+					<li id="playShow">
+						<a href="#" target="_blank"><img src="images/me.jpg"></a>
+						<a href="#" target="_blank"><img src="images/me1.jpeg"></a>
+						<a href="#" target="_blank"><img src="images/me2.jpeg"></a>
+					</li>
+				</ul>
+
+			</div>
+		</div>
+	</div>
+</div>
+<div id="works" class="section-wrap section-works">
+	<div class="section">
+		<div class="works-content section-content">
+			<h1>Artifact</h1>
+			<div class="works-list clearfix">
+				<div class="works-item first fade fade1">
+					<a href="books/adam-fallacy.html" target="_blank">
+						<img src="images/works/adam-fallacy.png" alt="" style="width:300px" >
+						<div class="work-info" style="line-height: 300%;">
+							<h4>Adam's fallacy: a guide to economics theology</h4>
+							<p>Written Time：June, 2023<br>
+							Author: Qiu, Mave</p>
+						</div>
+					</a>
+				</div>
+				<div class="works-item fade fade2">
+					<a href="books/adam-fallacy.html" target="_blank">
+						<img src="images/works/adam-fallacy.png" alt="" style="width:300px" >
+						<div class="work-info" style="line-height: 300%;">
+							<h4>Adam's fallacy: a guide to economics theology</h4>
+							<p>Written Time：June, 2023<br>
+							Author: Qiu, Maeve</p>
+						</div>
+					</a>
+				</div>
+	
+			</div>
+			<a class="more-link" target="_blank" href="books/allbooks.html">More</a>
+		</div>
+	</div>
+</div>
+<div id="books" class="section-wrap section-books">
+	<div class="section">
+		<div class="books-content clearfix section-content">
+			<h1>Link Anywhere</h1><br>
+			<ul>
+				<li><a target="_blank" href="http://www.stats.gov.cn"><p style="color:aliceblue; text-decoration: underline;width: 300px;">China National Bureau of Statistics</p></a></li>
+				<li><a target="_blank" href="http://ifb.cass.cn/irti"><p style="color:aliceblue;text-decoration: underline;width: 600px;">Financial Statistics Database of the Chinese Academy of Social Sciences</p></a></li>
+				<li><a target="_blank" href="http://www.wind.com.cn"><p style="color:aliceblue;text-decoration: underline;width: 200px;">Wind Economy Info</p></a></li>
+				<li><a target="_blank" href="http://www.worldbank.org/data"><p style="color:aliceblue;text-decoration: underline;width: 200px;">World Bank Database</p></a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div id="contact" class="section-wrap section-contact" onload="showDateTime();">
+	<div class="section">
+		<div class="contact-content clearfix section-content">
+			<h1>Contact</h1>
+			<div class="left">
+				<div class="contact-ways fade fade1">
+					<h2>Social Network</h2>
+					<ul>
+						<li>Mail：<a target="_blank" href="mailto:qiushutian@126.com" style="font-weight: bold;color:aliceblue;text-decoration: underline;position:absolute;left:60px;">  qiushutian@126.com</a></li>
+						<li>Twitter：<a target="_blank" href="https://twitter.com/qiushutian" style="font-weight: bold; color:aliceblue;text-decoration: underline;position:absolute;left:60px;">@qiushutian</a></li>
+						<li>Github：<a target="_blank" href="https://github.com/qiushutian" style="font-weight: bold; color:aliceblue;text-decoration: underline;position:absolute;left:60px;">@qiushutian</a></li>
+					</ul>
+				</div>
+				<div class="contact-info fade fade2" style="margin-top: 50px;">
+					<hr width="1000" size="2" style="margin-bottom: 50px;"/>
+				</div>
+			</div>
+		</div>
+		<div>	
+			<p id="dateTime1" align="center"></p>
+		</div>		
+	</div>
+</div>
+
+<div class="overlay"></div>
+<div class="state-indicator"></div>
+
+<script type="text/javascript" src="./js/jquery-1.9.1.min.js"></script>
+<script src="js/global.js"></script>
+<script>
+	var n=0,count=$("#playNum a").size();
+
+	$("#playNum a").click(function(){
+		var i=$(this).text()-1;
+		$("#playShow a").filter(":visible").hide().parent().children().eq(i).fadeIn(1200);
+	});
+
+	function showAuto(){
+		n=n>=(count-1)?0:++n;
+		$("#playNum a").eq(n).trigger('click');
+	}
+	$(function(){
+		$("#playShow a:not(:first-child)").hide();
+		setInterval("showAuto()",2000);
+	});
+</script>
+
+<script>
+// this is for clock display
+    function showDateTime(){
+		var myDate= new Date();
+		var hour=myDate.getHours();
+		var min=myDate.getMinutes();
+		var sec=myDate.getSeconds();
+
+		if (min<10){
+			min="0"+min
+		}
+
+		if (hour<10){
+			hour="0"+hour
+		}
+
+		if (sec<10){
+			sec="0"+sec
+		}
+
+		document.getElementById("dateTime1").innerHTML='<p >' +" Beijing time: "+hour+":"+min+":"+sec+ '</p>';
+	}
+
+	setInterval("showDateTime();",1000);
+</script>
+
+</body>
+</html>
